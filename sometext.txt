@@ -2,3 +2,23 @@ git --version
 git status
 
 
+cd /d/your-new-folder
+git init
+git add .
+
+cd D:\AIAP\github-testground
+git config user.name "kentz-wong"
+git config user.email "kentz.wong@outlook.com"
+
+git commit -m "Initial commit"
+
+git remote set-url origin https://kentz-wong@github.com/kentz-wong/github-testground.git
+
+git config --show-origin --get-all credential.helper
+
+git config credential.helper manager
+
+git branch -M main
+
+git push -u origin main
+
